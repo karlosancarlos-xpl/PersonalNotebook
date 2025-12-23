@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNotebook));
             tlpForm = new TableLayoutPanel();
             tbCurrentPad = new Notebook.Controls.CTextBox();
             tbLastPadTitle = new Notebook.Controls.CTextBox();
@@ -91,14 +92,14 @@
             tbLastPadTitle.Font = new Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             tbLastPadTitle.ForeColor = Color.FromArgb(64, 64, 64);
             tbLastPadTitle.HighlightBorderColor = Color.CornflowerBlue;
-            tbLastPadTitle.Location = new Point(400, 18);
-            tbLastPadTitle.Margin = new Padding(0);
+            tbLastPadTitle.Location = new Point(408, 18);
+            tbLastPadTitle.Margin = new Padding(8, 3, 8, 3);
             tbLastPadTitle.MultiLine = false;
             tbLastPadTitle.Name = "tbLastPadTitle";
             tbLastPadTitle.Padding = new Padding(12);
             tbLastPadTitle.PlaceholderText = "No notes loaded yet";
             tbLastPadTitle.ReadOnly = true;
-            tbLastPadTitle.Size = new Size(400, 43);
+            tbLastPadTitle.Size = new Size(384, 43);
             tbLastPadTitle.TabIndex = 7;
             // 
             // tlpCurrentPadTitleContainer
@@ -221,6 +222,7 @@
             Controls.Add(tlpForm);
             DoubleBuffered = true;
             Font = new Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MinimumSize = new Size(816, 577);
             Name = "frmNotebook";
             SizeGripStyle = SizeGripStyle.Show;

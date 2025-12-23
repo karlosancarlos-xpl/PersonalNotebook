@@ -37,7 +37,6 @@
         private void tlpForm_SizeChanged(object? sender, EventArgs e)
         {
             tbCurrentPad.Height = tlpForm.ClientSize.Height - tlpCurrentPadTitleContainer.Height - 20;
-            tbCurrentPad.Text = Width + " x " + Height;
         }
 
         private void BtnExpandCurrentPad_Click(object? sender, EventArgs e)
